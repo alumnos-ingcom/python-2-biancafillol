@@ -4,8 +4,6 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 def par_o_impar(numero):
-
-
     """Esta función determina si un número es par o impar
     """
     numero = abs(numero)
@@ -18,8 +16,6 @@ def par_o_impar(numero):
     resultado = numero == 0
     return resultado
 def principal():
-
-
     """
     Esta función es la que se encarga de la parte 'interactiva' del ejercicio
     (La entrada, la llamada al algoritmo y la salida)
@@ -28,6 +24,4 @@ def principal():
     respuesta = par_o_impar(numero)
     print(respuesta)
 if __name__ == "__main__":
-
-
     principal()
