@@ -3,6 +3,8 @@
 # Bianca Fillol - @bianfillol
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
+
+
 def calcular_estadistica(secuencia):
     """Esta función calcula una estadística de una secuencia.
     El máximo, el mínimo y el promedio.
@@ -24,6 +26,8 @@ def calcular_estadistica(secuencia):
     promedio = promedio / limite
     resultado = (minimo, maximo, promedio)
     return resultado
+
+
 def principal():
     """
     Esta función es la que se encarga de la parte 'interactiva' del ejercicio
@@ -38,5 +42,7 @@ def principal():
         secuencia.append(numero)
     respuesta = calcular_estadistica(secuencia)
     print(respuesta)
+
+
 if __name__ == "__main__":
     principal()
