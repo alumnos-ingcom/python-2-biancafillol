@@ -25,12 +25,12 @@ def escanear_corchetes(cadena):
     contador = limite
     if limite > 1:
         while limite != 0:
-            if corchetes[0]== "[" and corchetes[-1]=="]":
+            if corchetes[0] == "[" and corchetes[-1] == "]":
                 corchetes.remove("[")
                 corchetes.remove("]")
-                contador = contador -2
+                contador = contador - 2
             limite = limite - 2
-        respuesta = contador ==0
+        respuesta = contador == 0
     elif limite == 0:
         respuesta = True
     else:
