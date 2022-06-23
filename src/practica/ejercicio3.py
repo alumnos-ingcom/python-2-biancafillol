@@ -35,7 +35,10 @@ def elementos_superpuestos(primera, segunda):
             elementos = elementos + 1
             superpuestos.append(posicion)
         posicion = posicion + 1
-    ejercicio_extra = superpuestos[0]
+    if len(superpuestos) > 0:
+        ejercicio_extra = superpuestos[0]
+    else:
+        ejercicio_extra = ""
     return elementos, ejercicio_extra
 
 
@@ -68,7 +71,8 @@ def principal():
         segunda.append(elemento)
     respuesta = elementos_superpuestos(primera, segunda)
     print(f"Se superponen {respuesta[0]} elementos.")
-    print(f"La superposición comienza desde la posición N°{respuesta[1]}.")
+    if respuesta[1] != "":
+        print(f"La superposición comienza desde la posición N°{respuesta[1]}.")
 
 
 if __name__ == "__main__":
