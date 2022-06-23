@@ -48,7 +48,7 @@ def principal():
     primera = []
     segunda = []
     limite = 0
-    limite = int(input("¿Cuantos elementos desea ingresar en la primera lista? "))
+    limite = int(input("¿Cuantos elementos desea ingresar? "))
     while contador != limite:
         elemento = input("Ingrese un elemento: ")
         verificar = isinstance(elemento, str)
@@ -58,7 +58,7 @@ def principal():
         primera.append(elemento)
     contador = 0
     limite = 0
-    limite = int(input("¿Cuántos elementos desea ingresar en la segunda lista? "))
+    limite = int(input("¿Cuántos elementos desea ingresar? "))
     while contador != limite:
         elemento = input("Ingrese un elemento: ")
         verificar = isinstance(elemento, str)
