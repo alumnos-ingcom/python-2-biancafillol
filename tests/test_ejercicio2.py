@@ -28,7 +28,7 @@ def test_negativos():
     secuencia = (-4, -2, -3, -9, -5, -1, -5, -4)
     resultado = calcular_estadistica(secuencia)
     assert isinstance(resultado, tuple), "El resultado debe ser una tupla."
-    assert resultado == (-9, -1, -4.125), "No se obtiene el resultado esperado."
+    assert resultado == (-9, -1, -4.125), "No se obtiene el resultado esperado"
 
 
 def test_iguales():
