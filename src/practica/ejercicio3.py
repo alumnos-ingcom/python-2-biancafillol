@@ -3,9 +3,13 @@
 # Bianca Fillol - @bianfillol
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
+
+
 def elementos_superpuestos(primera, segunda):
-    """Esta función determina cuántos elementos de dos listas se superponen entre sí.
-    Ejercicio extra: imprimir el número de posición de cuándo empieza la superposición.
+    """Esta función determina cuántos elementos
+    de dos listas se superponen entre sí.
+    Ejercicio extra: imprimir el número de
+    posición de cuándo empieza la superposición.
     """
     primer_limite = len(primera)
     segundo_limite = len(segunda)
@@ -33,6 +37,8 @@ def elementos_superpuestos(primera, segunda):
         posicion = posicion + 1
     ejercicio_extra = superpuestos[0]
     return elementos, ejercicio_extra
+
+
 def principal():
     """
     Esta función es la que se encarga de la parte 'interactiva' del ejercicio
@@ -63,5 +69,7 @@ def principal():
     respuesta = elementos_superpuestos(primera, segunda)
     print(f"Se superponen {respuesta[0]} elementos.")
     print(f"La superposición comienza desde la posición N°{respuesta[1]}.")
+
+
 if __name__ == "__main__":
     principal()
