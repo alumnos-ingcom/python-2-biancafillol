@@ -3,6 +3,8 @@
 # Bianca Fillol - @bianfillol
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
+
+
 def sucesion_fibonacci(numero_termino):
     """
     Esta función determina qué termino de la sucesión Fibonacci devolver,
@@ -20,6 +22,8 @@ def sucesion_fibonacci(numero_termino):
         suma = termino_1 + termino_2
         termino = termino + 1
     return termino_2
+
+
 def principal():
     """
     Esta función es la que se encarga de la parte 'interactiva' del ejercicio
@@ -35,5 +39,7 @@ def principal():
         else:
             respuesta = "\n El término debe ser mayor a 2, intentelo de nuevo.\n"
             print(respuesta)
+
+
 if __name__ == "__main__":
     principal()
