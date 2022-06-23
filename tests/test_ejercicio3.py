@@ -17,7 +17,7 @@ def test_iguales():
     primera = ["a", "a", "a", "a"]
     segunda = ["a", "a", "a", "a"]
     resultado = elementos_superpuestos(primera, segunda)
-    assert isinstance(resultado, tuple),"El resultado debe ser una tupla."
+    assert isinstance(resultado, tuple), "El resultado debe ser una tupla."
     assert resultado[0] == 4, "No se obtiene el resultado esperado."
     assert resultado[1] == 0, "No se obtiene el resultado esperado."
 
@@ -30,7 +30,7 @@ def test_diferentes():
     primera = ["a", "a", "a", "a"]
     segunda = ["b", "b", "b", "b"]
     resultado = elementos_superpuestos(primera, segunda)
-    assert isinstance(resultado, tuple),"El resultado debe ser una tupla."
+    assert isinstance(resultado, tuple), "El resultado debe ser una tupla."
     assert resultado[0] == 0, "No se obtiene el resultado esperado."
     assert resultado[1] == "", "No se obtiene el resultado esperado."
 
@@ -43,7 +43,7 @@ def test_iguales_distintos():
     primera = ["a", "a", "a", "a"]
     segunda = ["A", "A", "A", "A"]
     resultado = elementos_superpuestos(primera, segunda)
-    assert isinstance(resultado, tuple),"El resultado debe ser una tupla."
+    assert isinstance(resultado, tuple), "El resultado debe ser una tupla."
     assert resultado[0] == 4, "No se obtiene el resultado esperado."
     assert resultado[1] == 0, "No se obtiene el resultado esperado."
 
@@ -55,7 +55,7 @@ def test_vacio():
     primera = []
     segunda = []
     resultado = elementos_superpuestos(primera, segunda)
-    assert isinstance(resultado, tuple),"El resultado debe ser una tupla."
+    assert isinstance(resultado, tuple), "El resultado debe ser una tupla."
     assert resultado[0] == 0, "No se obtiene el resultado esperado."
     assert resultado[1] == "", "No se obtiene el resultado esperado."
 
@@ -68,6 +68,6 @@ def test_caracter_vacio():
     primera = [""]
     segunda = ["", ""]
     resultado = elementos_superpuestos(primera, segunda)
-    assert isinstance(resultado, tuple),"El resultado debe ser una tupla."
+    assert isinstance(resultado, tuple), "El resultado debe ser una tupla."
     assert resultado[0] == 1, "No se obtiene el resultado esperado."
     assert resultado[1] == 0, "No se obtiene el resultado esperado."
