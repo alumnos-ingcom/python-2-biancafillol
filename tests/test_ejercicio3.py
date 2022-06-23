@@ -34,6 +34,7 @@ def test_diferentes():
     assert resultado[0] == 0, "No se obtiene el resultado esperado."
     assert resultado[1] == "", "No se obtiene el resultado esperado."
 
+
 def test_vacio():
     """
     Cuando no se ingresan elementos
