@@ -1,5 +1,5 @@
 """
-Se quiere testear que la función calcular_estadistica()
+Se quiere testear que la función elementos_superpuestos()
 funciona correctamente.
 """
 ################
@@ -33,20 +33,6 @@ def test_diferentes():
     assert isinstance(resultado, tuple), "El resultado debe ser una tupla."
     assert resultado[0] == 0, "No se obtiene el resultado esperado."
     assert resultado[1] == "", "No se obtiene el resultado esperado."
-
-
-def test_iguales_distintos():
-    """
-    Cuando los elementos de las listas
-    son iguales pero de forma diferente.
-    """
-    primera = ["a", "a", "a", "a"]
-    segunda = ["A", "A", "A", "A"]
-    resultado = elementos_superpuestos(primera, segunda)
-    assert isinstance(resultado, tuple), "El resultado debe ser una tupla."
-    assert resultado[0] == 4, "No se obtiene el resultado esperado."
-    assert resultado[1] == 0, "No se obtiene el resultado esperado."
-
 
 def test_vacio():
     """
