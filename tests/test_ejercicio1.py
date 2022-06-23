@@ -8,7 +8,6 @@ Se quiere testear que la función par_o_impar funciona correctamente.
 from practica.ejercicio1 import par_o_impar
 
 
-
 def test_par_positivo():
     """
     Cuando el número ingresado es par positivo.
