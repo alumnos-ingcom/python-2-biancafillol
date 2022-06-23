@@ -35,7 +35,7 @@ def principal():
         if numero_termino > 2:
             respuesta = sucesion_fibonacci(numero_termino)
             print(f"El término N°{numero_termino}", end="")
-            print(f" es el número {respuesta}", end= "")
+            print(f" es el número {respuesta}", end="")
             print(" en la susesión Fibonacci.", end="")
         else:
             respuesta = "\n El término debe ser mayor a 2.\n"
